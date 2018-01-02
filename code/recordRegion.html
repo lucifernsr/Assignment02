@@ -23,9 +23,26 @@
             </div>
           </header>
           <main class="mdl-layout__content">
-              <!--   Main page content here:   -->  
+              <!--   Main page content here:   --> 
+              <div id="map"></div>
 
-          </main>    
+          </main>
+            
+            <footer class = "mdl-mini-footer">
+               <div align="left">
+                   <!-- Raised button with ripple -->
+                   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Add Corner</button>
+                   
+                   <!-- Raised button with ripple -->
+                   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Reset</button>
+                   
+                   <!-- Raised button with ripple -->
+                   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Save Region</button>
+               </div>
+               
+                
+            </footer>
+            
           <div id="toast" class="mdl-js-snackbar mdl-snackbar">
             <div class="mdl-snackbar__text"></div>
             <button class="mdl-snackbar__action" type="button"></button>
@@ -36,5 +53,8 @@
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <script src="js/shared.js"></script>
         <script src="js/recordRegionPage.js"></script>
+        <script async defer
+  src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyART7HqXuP4pN41JtxhyFMbXYtA84-2e7M&libraries=geometry&callback=initMap">
+    </script>
     </body>
 </html>
